@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const contentNavbar = document.querySelector(".container-navbar-navbar");
+const contentNavbar = document.querySelector(".container-navbar");
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
 const navbar = document.querySelector(".navbar");

@@ -17,7 +17,7 @@
     position: static;
 }
 
-.container-navbar-navbar {
+.container-navbar {
     overflow-x: hidden;
     display: none;
     background-color: white;
@@ -33,7 +33,7 @@
     transition-timing-function: linear; */
 }
 
-.container-navbar-navbar.active {
+.container-navbar.active {
     width: 100%;
     /* transform: translateX(0%); */
 }
@@ -82,7 +82,7 @@
     text-align: center;
 }
 
-.container-navbar-navbar .logo {
+.container-navbar .logo {
     width: 100%;
     border-bottom: #000 1px solid;
 }
