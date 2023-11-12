@@ -1,18 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.overlay').style.display = 'none';
-});
-
 const hamburger = document.querySelector(".hamburger");
-const exitOverlay = document.querySelector(".exit-overlay");
+const contentNavbar = document.querySelector(".container-navbar-navbar");
+const main = document.querySelector(".main");
+const footer = document.querySelector(".footer");
+const navbar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", () => {
-    document.querySelector('.overlay').style.display = 'block';
-    document.querySelector('.non-overlay').style.display = 'none';
-    document.querySelector('.overlay').style.right = '0';
-});
-
-exitOverlay.addEventListener("click", () => {
-    document.querySelector('.overlay').style.display = 'none';
-    document.querySelector('.non-overlay').style.display = 'block';
-    document.querySelector('.overlay').style.right = '-100%';
+    contentNavbar.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    main.classList.toggle("active");
+    footer.classList.toggle("active");
+    navbar.classList.toggle("active");
 });

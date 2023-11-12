@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
     .footer-up {
         flex-direction: column;
@@ -7,6 +8,10 @@
     .footer-up h1 {
         width: 90%;
         text-align: center;
+    }
+
+    .main-content {
+        display: block;
     }
 
     main {
@@ -21,14 +26,39 @@
     .container-footer-up-btn {
         width: 80%;
     }
+
+    .card {
+        grid-template-columns: repeat(3 ,1fr);
+    }
+    
+
+    /* .cards { 
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+        background-color: yellow;
+    } */
 }
 
-@media (max-width: 430px) {
+
+@media (max-width: 425px) {
+    .container-navbar-navbar {
+        display: block;
+    }
+    
     .menu {
         display: none;
     }
-
+    
     .hamburger {
         display: block;
     }
+
+    .card {
+        grid-template-columns: repeat(4 ,1fr);
+    }
+    /* .cards { 
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        background-color: red;
+    } */
 }
