@@ -37,7 +37,6 @@
         grid-template-columns: repeat(3 ,1fr);
     }
     
-
     /* .container-items-product { 
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-template-columns: repeat(3, 1fr);
@@ -63,9 +62,251 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #container {
+        width: 100%;
+    }
+
     /* .container-items-product { 
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         grid-template-columns: repeat(2, 1fr);
         background-color: red;
     } */
 }
+
+@media only screen and (min-width:600px)and (max-width:960px) {
+    #popular_img{
+        height:60vh;
+        background-image:url("img/cosplay\ sukuna.jpg");
+    }
+
+   #poster {
+       align-items: flex-end;
+       height: 60vh;
+       background-size: cover;
+       width: 100%;
+   }
+}
+
+@media only screen and (min-width:0px)and (max-width:599px) {
+#popular_img{
+        height:40vh;
+        background-image:url("img/cosplay\ sukuna.jpg");
+    }
+
+   #poster {
+       align-items: flex-end;
+
+       width: 100%;
+       min-width: 100%;
+       background-image: url("img/main\ image\ 2.jpg");
+   }
+
+   .poster_container {
+       margin-bottom: 20px;
+   }
+}
+
+@media only screen and (min-width:600px)and (max-width:960px) {
+     
+    .popular_sub_container {
+        min-width: fit-content;
+        flex-wrap: wrap;
+ }
+  .popular_container>h1{
+      margin-top:30px;
+      margin-bottom:30px;
+  }
+}
+  @media only screen and (min-width:0px)and (max-width:599px) {
+      .popular_container>h1{
+          text-align: left;
+
+      }
+       .popular_sub_container {
+           justify-content: flex-start;
+            flex-wrap: wrap;
+       }
+        .popular_container>h1{
+      margin-top:10px;
+      margin-bottom:30px;
+      font-size:25px;
+  }
+
+  }
+
+  @media only screen and (min-width:600px)and (max-width:960px) {
+    .men_women_kid_container{
+    /* flex-wrap: wrap; */
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    height:700px;
+    
+    }
+    .men_women_kid_container>div{
+    width: 100%;
+    
+    }
+    
+    }
+    @media only screen and (min-width:0px)and (max-width:599px) {
+    .men_women_kid_container{
+     display:grid;
+    grid-template-columns: repeat(1,1fr);
+      height:700px;
+    }
+    .men_women_kid_container>div{
+    width: 100%;
+    /*   height:auto; */
+    
+    
+    }
+    
+    
+    }
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (min-width:600px)and (max-width:960px) {
+
+     #displayContents>div {
+        min-width: 40%;
+        }
+        
+    #bestOfDJDAYS>div {
+        min-width: 31%;
+        }
+    #categoryShop>div {
+        /* border: 1px solid red; */
+        min-width: 310px;
+        }
+    #categoryShop {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        }
+    #productSection>section>h1 {
+        margin: 20px 0px;
+        }
+    section {
+        margin: 50px 0px;
+        }
+    .price {
+           top: 190px;
+        }
+    .price1 {
+           bottom: 50px;
+        }
+        
+        
+        }
+    @media only screen and (min-width:0px)and (max-width:599px) {
+    #displayContents>div {
+        min-width: 85%;
+        }
+        
+    #bestOfDJDAYS>div {
+        min-width: 42%;
+        height:240px;
+        }
+    #categoryShop {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        }
+    #categoryShop>div {
+        /* border: 1px solid red; */
+        min-width: 280px;
+        }
+        
+    #productSection>section>h1 {
+        margin: 20px 0px;
+        }
+        section {
+        margin: 50px 0px;
+        }
+    .price {
+        top: 105px;
+        }
+    .price1 {
+        bottom: 65px;
+        }
+        }
+
+@media only screen and (min-width:0px)and (max-width:960px) {
+    .yellow_container_heading {
+        width: 100%;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        }
+        
+    .yellow_container_heading>div {
+        margin-top: 10px;
+        }
+        
+        }
+
+
+@media (max-width: 600px) {
+    main{
+        height: auto;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+        
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*-----responsive pembelian-----*/
+  /* Responsive */
+  @media (max-width: 940px) {
+    .container {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+   
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+   
+    .left-column img {
+      width: 300px;
+      right: 0;
+      top: -65px;
+      left: initial;
+    }
+  }
+   
+  @media (max-width: 535px) {
+    .left-column img {
+      width: 220px;
+      top: -85px;
+    }
+  }
+
+  @media only screen and(min-width: 0px) and (max-width: 375px){
+        #container{
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width: 376px)and (max-width: 768px){
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+        }
+    }
